@@ -10,7 +10,7 @@ git clone https://github.com/pwolfe8/receptionCenterPiece
 cd receptionCenterPiece
 git submodule update --init --recursive
 ```
-
+___
 ## Mechanical
 I printed this on a Prusa i3 MK3S. The trays with all the settings are in the `mechanical` folder.
 
@@ -21,3 +21,10 @@ Design files can be found on Onshape: [fullDesignReception](<https://cad.onshape
 
 
 ## Software
+
+___
+## Assembly
+Once you have all the pieces printed, follow this guide on assembly.
+
+### Platforms
+### 
