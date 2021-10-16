@@ -12,14 +12,21 @@ git submodule update --init --recursive
 ```
 ___
 ## Mechanical
-I printed this on a Prusa i3 MK3S. The trays with all the settings are in the `print_trays` folder.
+I printed this on a Prusa i3 MK3S. The trays and all the settings are in the `print_trays` folder.
 I printed with [standard 1.75mm black PETG filament](<https://www.amazon.com/dp/B08XGX23TP?psc=1&ref=ppx_yo2_dt_b_product_details>) on a textured prusa print tray. 
 
 Design files can be found on Onshape: [fullDesignReception](<https://cad.onshape.com/documents/7be5b9b09e066ba446a30efc/w/afbadb4d389ea6207fcba0bc/e/a346c253faa0d5286ebe5b9c?renderMode=0&uiState=616b083ecb150f63125368d4>)
 
 ## Painting & Decoration
-I did not do the painting/decoration my wife and her sister did. But the premise was 
+I did not do the painting/decoration my wife and her sister did. But the premise was paint a thin copper layer leaving some black showing underneath to look like worn copper for more of a steampunk feel. 
+DO NOT print the smooth interface between the ring gear and the sun/planetary gears as it will add too much friction to move easily. 
 
+Here's a quick DO NOT paint list: 
+- bottom of planetary gears
+- bottom of sun gear
+- part of ring gear touching the bottom of the planetary/sun gears
+- the base drive gear & anything used to hold it in place as it's hidden underneath anyways
+- the servo horn attachment (it's hidden as well)
 ## Electrical
 
 Wanted to try out micropython so I got these [D1 Mini modules](<https://www.amazon.com/dp/B08QZ2887K?psc=1&ref=ppx_yo2_dt_b_product_details>) based on the ESP8266 and flashed them with the latest version. They averaged 3 dollars each at the time I purchased them. 
