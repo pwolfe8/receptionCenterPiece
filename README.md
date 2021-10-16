@@ -20,7 +20,9 @@ Design files can be found on Onshape:
 - [AA_3V_Boost5V](<https://cad.onshape.com/documents/a1963687730519ec8fcaa736/w/4932db5a468bc2b8e7c12e8f/e/31f6f86f6f40c3d5acde4a41?renderMode=0&uiState=616b1a22ca3c791168b4c31e>)
 
 ## Painting & Decoration
-I did not do the painting/decoration my wife and her sister did. But the premise was paint a thin copper layer leaving some black showing underneath to look like worn copper for more of a steampunk feel. 
+I did not do the painting/decoration my wife and her sister did. My wife also came up with the concept. 
+
+The premise for painting was paint a thin copper layer leaving some black showing underneath to look like worn copper for more of a steampunk feel. 
 DO NOT print the smooth interface between the ring gear and the sun/planetary gears as it will add too much friction to move easily. 
 
 Here's a quick DO NOT paint list: 
@@ -29,6 +31,8 @@ Here's a quick DO NOT paint list:
 - part of ring gear touching the bottom of the planetary/sun gears
 - the base drive gear & anything used to hold it in place as it's hidden underneath anyways
 - the servo horn attachment (it's hidden as well)
+
+Decoration involved several amazon and hobby lobby items and is really up to you. [insert picture here later of ours decorated]
 
 ## Electrical
 
@@ -47,7 +51,7 @@ Anyways here's the parts list to make a single center piece:
 - 2x [battery contact negative](<https://www.digikey.com/en/products/detail/mpd-memory-protection-devices/SN-T5-1/2439583>)(digikey)
 
 and here's the schematic: 
-![circuit_schematic](schematic.png)
+![circuit_schematic](circuit_schematic.png)
 
 ### Servo Modification for Continuous Rotation
 
