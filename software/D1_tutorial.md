@@ -73,19 +73,13 @@ sta_if.ifconfig()
 ```
 
 ## webrepl push/pull
+navigate your terminal into the webrepl submodule folder first
 ```bash
-# update submodule
-git submodule update --init --recursive
-cd webrepl
-
-# for getting help
-python webrepl_cli.py --help 
-
 # example pull (just pulls the boot.py from remote and saves to local file named "local_boot.py")
 python .\webrepl_cli.py -p YOURPASSWORDHERE REMOTEIPHERE:boot.py local_boot.py
 
 # example push (just pushes your local file main.py file located one directory above the cloned webrepl folder to your board and names it main.py)
-python .\webrepl_cli.py -p YOURPASSWORDHERE ../main.py REMOTEIPHERE:main.py
+python .\webrepl_cli.py -p YOURPASSWORDHERE ../software/main.py REMOTEIPHERE:main.py
 
 # feel free to setup batch/bash scripts for your common operations
 ```
@@ -106,7 +100,7 @@ If you want to change the syntax so "on" turns led on use [this documentation](<
 
 Now use the example push as reference to push this `main.py` file to your board:
 ```bash
-python .\webrepl_cli.py -p YOURPASSWORDHERE ../main.py REMOTEIPHERE:main.py
+python .\webrepl_cli.py -p YOURPASSWORDHERE ../software/main.py REMOTEIPHERE:main.py
 ```
 
 To reset your board to let the main.py changes take effect:
@@ -116,12 +110,6 @@ To reset your board to let the main.py changes take effect:
     import machine
     machine.reset()
     ```
-
-
-
-
-
-
 
 Feel free to modify this main.py to your heart's content and push updates/pull current files.
 Happy Hacking

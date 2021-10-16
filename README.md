@@ -71,7 +71,7 @@ Maybe wear gloves to avoid silicon grease on you.
 ## Firmware/Software
 [This Guide](software/D1_tutorial.md) will show you how to install the tools to flash and setup your D1 Mini for over the air updates.
 
-I also included the version of micropython I used for this board already downloaded in the software folder [here](software/esp8266-20210902-v1.17.bin). Follow the guide to flash it on your board.
+I also included the version of micropython I used for this board already downloaded in the software folder [here](software/esp8266-20210902-v1.17.bin). Follow the guide to flash it on your board and send over the main.py for this center piece heartbeat pulse code.
 
 ___
 ## Assembly
