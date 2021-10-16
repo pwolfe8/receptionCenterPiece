@@ -51,7 +51,18 @@ and here's the schematic:
 
 ### Servo Modification for Continuous Rotation
 
+I was a dumbass and bought normal servos with limited range. For a little more money you can buy continuous servos in the same shape. I will post a link once I try some to make sure they have the same dimensions...
 
+But if you really don't want to wait, here's a guide on what I did to modify the servo and the servo horn:
+Maybe wear gloves to avoid silicon grease on you.
+- unscrew the 4 screws
+- place the gears out in the order you took them off so you don't forget
+- remove the metal blocking component off the potentiometer
+- replace the gears in order except the last top one
+- clip the plastic blocking part off with flush cutters and smooth with exacto knife
+- replace top gear and screw back together
+- then take the cross shaped servo horn and chip away until you snip off the long sides with flush cutters. then make a smooth curve with flush cutters.
+- use the small philips screw to hold the horn in
 
 ## Firmware/Software
 I'll put flashing instructions here along with the main.py I used. Also talk about setting up over the air updates.
