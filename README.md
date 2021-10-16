@@ -12,15 +12,25 @@ git submodule update --init --recursive
 ```
 ___
 ## Mechanical
-I printed this on a Prusa i3 MK3S. The trays with all the settings are in the `mechanical` folder.
+I printed this on a Prusa i3 MK3S. The trays with all the settings are in the `print_trays` folder.
+I printed with [standard 1.75mm black PETG filament](<https://www.amazon.com/dp/B08XGX23TP?psc=1&ref=ppx_yo2_dt_b_product_details>) on a textured prusa print tray. 
 
 Design files can be found on Onshape: [fullDesignReception](<https://cad.onshape.com/documents/7be5b9b09e066ba446a30efc/w/afbadb4d389ea6207fcba0bc/e/a346c253faa0d5286ebe5b9c?renderMode=0&uiState=616b083ecb150f63125368d4>)
 
+## Painting & Decoration
+I did not do the painting/decoration my wife and her sister did. But the premise was 
+
 ## Electrical
 
+Wanted to try out micropython so I got these [D1 Mini modules](<https://www.amazon.com/dp/B08QZ2887K?psc=1&ref=ppx_yo2_dt_b_product_details>) based on the ESP8266 and flashed them with the latest version. They averaged 3 dollars each at the time I purchased them. 
+
+If you just care about You can use any microcontroller and make your own electronics box for it as long as
+- powerable off 5V since that's what the boost converter output is. (and servo needs 5V pwr). though you could power off 3V directly from battery if you modify the circuit
+- has a pwm pin to drive servo
 
 
-## Software
+## Firmware/Software
+I'll put flashing instructions here along with the main.py I used. Also talk about setting up over the air updates.
 
 ___
 ## Assembly
