@@ -50,8 +50,8 @@ Anyways here's the parts list to make a single center piece:
 - 2x [battery contact positive](<https://www.digikey.com/en/products/detail/mpd-memory-protection-devices/SN-T5-2/2439587>)(digikey)
 - 2x [battery contact negative](<https://www.digikey.com/en/products/detail/mpd-memory-protection-devices/SN-T5-1/2439583>)(digikey)
 
-and here's the schematic: 
-![circuit_schematic](circuit_schematic.png)
+and here's the schematic (full fritzing file in the circuit folder): 
+![circuit_schematic](circuit/circuit_schematic.png)
 
 ### Servo Modification for Continuous Rotation
 
@@ -69,7 +69,9 @@ Maybe wear gloves to avoid silicon grease on you.
 - use the small philips screw to hold the horn in
 
 ## Firmware/Software
-I'll put flashing instructions here along with the main.py I used. Also talk about setting up over the air updates.
+[This Guide](software/D1_tutorial.md) will show you how to install the tools to flash and setup your D1 Mini for over the air updates.
+
+I also included the version of micropython I used for this board already downloaded in the software folder [here](software/esp8266-20210902-v1.17.bin). Follow the guide to flash it on your board.
 
 ___
 ## Assembly
