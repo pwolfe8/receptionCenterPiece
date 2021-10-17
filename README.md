@@ -15,9 +15,16 @@ ___
 I printed this on a Prusa i3 MK3S. The trays and all the settings are in the `print_trays` folder.
 I printed with [standard 1.75mm black PETG filament](<https://www.amazon.com/dp/B08XGX23TP?psc=1&ref=ppx_yo2_dt_b_product_details>) on a textured prusa print tray. 
 
+Approximate total print time: ~19 hrs depending on heating/cooling time.
+
 Design files can be found on Onshape: 
 - [fullDesignReception](<https://cad.onshape.com/documents/7be5b9b09e066ba446a30efc/w/afbadb4d389ea6207fcba0bc/e/a346c253faa0d5286ebe5b9c?renderMode=0&uiState=616b083ecb150f63125368d4>)
 - [AA_3V_Boost5V](<https://cad.onshape.com/documents/a1963687730519ec8fcaa736/w/4932db5a468bc2b8e7c12e8f/e/31f6f86f6f40c3d5acde4a41?renderMode=0&uiState=616b1a22ca3c791168b4c31e>)
+
+screw bolts/nuts used:
+- 2x M2x8 screws ([here's](<https://www.amazon.com/gp/product/B07F739QCM/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1>) the metric screw bolt/washer/nut kit I used. good to have around for various projects)
+- 2x M2 nuts from same kit
+- the small philips head screw that came with the microservo
 
 ## Painting & Decoration
 I did not do the painting/decoration my wife and her sister did. My wife also came up with the concept. 
@@ -49,6 +56,7 @@ Anyways here's the parts list to make a single center piece:
 - 1x [mechanical switch](<https://www.adafruit.com/product/3221>)(adafruit): just a cool clickly mechanical switch
 - 2x [battery contact positive](<https://www.digikey.com/en/products/detail/mpd-memory-protection-devices/SN-T5-2/2439587>)(digikey)
 - 2x [battery contact negative](<https://www.digikey.com/en/products/detail/mpd-memory-protection-devices/SN-T5-1/2439583>)(digikey)
+- the screw bolts/nuts listed in the mechanical section
 
 and here's the schematic (full fritzing file in the circuit folder): 
 ![circuit_schematic](circuit/circuit_schematic.png)
@@ -76,6 +84,57 @@ I also included the version of micropython I used for this board already downloa
 ___
 ## Assembly
 Once you have all the pieces printed, follow this guide on assembly.
+Note: pull up the onshape as a visual reference for the fully assembled piece. feel free to hide/show parts to see internals if it's unclear.
 
-### Platforms
-### 
+### Mechanical Assembly
+
+Clean up the brims off all the pieces, especially the gears that will be interfacing with other gears. If you experience jamming it's probably because you haven't fully cleaned the brim off every tooth of one of the gears.
+
+First assemble the base & motor box:
+- get the base support piece and the motor box and pegs.
+- align the motor box appropriately to base following the onshape design.
+- now make sure the motor box and base have a shared flat surface on the bottom. feel free to put on a table to see if it's level
+- then push/wiggle the pegs into place (friction fit) to hold the motor box to the base. you may have to sand/trim the hole/pegs
+- Now attach the servo motor with M2 screws/nuts. I used M2x8 but you can take up to M2x12 as well. screw head coming from underneath motor box and nut on top of motor.  
+NOTE: there are 2 orientations, make sure the way you choose gets the servo horn aligned with the center of the box. Not the other way
+- now undo the small philips head on the servo, put the gear attachment over the servo horn, and then screw the small philips back in.
+
+Now assemble the drive gear:
+- stack the drive gear + ring gear + sun gear as shown in the cad design files.
+- put the drive shaft through such that the top circle stopper is stopped against the sun gear.
+- put the locking ring and shaft through to make sure it's held in place. 
+- pull the ring gear away from the drive gear so they no longer contact other than by the drive shaft (should be ~2mm gap)
+
+Place the drive gear assembly on the base by aligning the 2 small notches on the outside of the ring gear with the base. If it doesn't fit you've put your motor on in the wrong orientation so reverse/repeat steps to flip it.  Congrats! hard part done
+
+
+Now assemble the platforms/planetry gear pieces.
+
+Let's assemble the first/shortest platform first.
+- find the 3 candle holders, first platform, shortest shaft, and 1 planetary gear
+- get the shortest candle holder and place it in first then go clockwise like in the onshape and put the next highest, then tallest in. refer to onshape if you get stuck.
+- now put the shortest shaft into the bottom shaft hole.
+- then place the planetary gear onto the other side of the shaft
+
+Next 2 platforms are straight forward: 
+- get 2nd platform (feel free to hot glue some decorations on first, just make sure it's close enough balanced weight-wise for stability)
+- get the middle length shaft and a planetary gear
+- insert shaft into 2nd platform shaft hole and planetary gear shaft hole
+- repeat for 3rd platform
+
+Now final assembly before electrical box:
+- place the 1st platform assembly inbetween sun & ring gear
+- place the 2nd platform assembly 120 degrees off in the same manner
+- place the 3rd platform assembly 120 degrees off in the same manner
+
+Electrical box:
+- make sure the orientation matches the onshape 
+- place the switch holder into the groove
+- place the battery box in the large rectangle with the boost converter facing out
+
+
+### Electrical Assembly/Wiring Harness
+Sadly I didn't have time to make a pcb with nice connectors and all so twisted together some wires and hand soldered the wiring harness.  In the future I'll release a pcb design but for now here's what I did:
+
+
+
