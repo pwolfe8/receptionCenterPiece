@@ -134,7 +134,30 @@ Electrical box:
 
 
 ### Electrical Assembly/Wiring Harness
-Sadly I didn't have time to make a pcb with nice connectors and all so twisted together some wires and hand soldered the wiring harness.  In the future I'll release a pcb design but for now here's what I did:
+Sadly I didn't have time to make a pcb with nice connectors and all, so I twisted together some wires and hand soldered the wiring harness.  In the future I'll release a pcb design but for now here's what I did:
+
+tools:
+- some 22 gauge solid core wire
+- strippers/wire cutters
+- soldering iron
+- heatshrink/heat gun or lighter 
 
 
+I got a 22 gauge solid core wire pack with different colors off amazon
 
+Cut the following lengths per color and strip each side:
+- white: 4, 6 cm
+- red: 4, 4, 6 cm  (strip one side more for twist)
+- black: 5, 5, 6, 7 cm (strip one side more for twist)
+- blue: 2 cm (strip to 1.5 cm insulation)
+- yellow: 4 cm 
+
+now assemble: 
+- twist the longer red exposed ends together and solder
+- repeat for black
+- solder blue wire as battery pack series connection
+- solder white wire from pack to switch using 6 cm
+- solder black long wire to pack ground
+- complete rest of soldering according to the circuit schematic above
+
+afterwards you can use a label maker to label on/off depending on how you wired it to the switch
